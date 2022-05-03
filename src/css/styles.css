@@ -1,0 +1,88 @@
+.row:hover {
+    background-color:#ADD8E6;
+    cursor: pointer;
+  }
+
+.allBanksContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+  
+.heading{
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.searchFilter{
+  display: flex;
+  justify-content: center;
+}
+
+.searchFilterContainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchBar{
+  min-width: 250px;
+}
+
+.banksList{
+  margin-bottom: 20px;
+}
+
+.pagination{
+  margin: auto;
+}
+
+.progress{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.column{
+  border-right: 1px solid black;
+}
+
+.error{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailsContainer{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.backArrow{
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.bankHeading{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Inter";
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.text{
+  font-family: "Inter";
+  font-size: 30px;
+  margin-bottom: 20px;
+}

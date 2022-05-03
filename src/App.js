@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
+import AllBanks from './containers/AllBanks';
+import BankDetails from './containers/BankDetails';
+import NotFound from './containers/NotFound';
+import "./css/styles.css";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <BrowserRouter>
+      <Routes>
+        <Route path="/all-banks" element={<AllBanks/>}></Route>
+        <Route path="/bank-details/:id" element={<BankDetails/>}></Route>
+        <Route path="/" element={<Navigate to="/all-banks" replace />}/>
+        <Route path="*" element={<NotFound/>} />
+      </Routes>
+     </BrowserRouter>
     </div>
   );
 }
